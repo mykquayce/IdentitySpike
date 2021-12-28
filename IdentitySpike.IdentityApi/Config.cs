@@ -3,24 +3,47 @@
 
 
 using IdentityServer4.Models;
-using System.Collections.Generic;
 
-namespace IdentitySpike.IdentityApi
+namespace IdentitySpike.IdentityApi;
+
+public static class Config
 {
-    public static class Config
-    {
-        public static IEnumerable<IdentityResource> IdentityResources =>
-            new IdentityResource[]
-            { 
-                new IdentityResources.OpenId()
-            };
+	public static IEnumerable<IdentityResource> IdentityResources
+	{
+		get
+		{
+			yield return new IdentityResources.OpenId();
+		}
+	}
 
-        public static IEnumerable<ApiScope> ApiScopes =>
-            new ApiScope[]
-            { };
+	public static IEnumerable<ApiScope> ApiScopes
+	{
+		get
+		{
+			yield return new("api1", "My API");
+		}
+	}
 
-        public static IEnumerable<Client> Clients =>
-            new Client[] 
-            { };
-    }
+	public static IEnumerable<Client> Clients
+	{
+		get
+		{
+			yield return new()
+			{
+				ClientId = "client",
+
+				// no interactive user, use the clientid/secret for authentication
+				AllowedGrantTypes = GrantTypes.ClientCredentials,
+
+				// secret for authentication
+				ClientSecrets =
+				{
+					new Secret("secret".Sha256()),
+				},
+
+				// scopes that client has access to
+				AllowedScopes = { "api1", },
+			};
+		}
+	}
 }
