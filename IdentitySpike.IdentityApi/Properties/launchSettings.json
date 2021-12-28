@@ -1,12 +1,15 @@
 {
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "SelfHost": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": ".well-known/openid-configuration",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:5001"
+      "applicationUrl": "https://localhost:5001",
+      "dotnetRunMessages": true
     }
   }
 }
