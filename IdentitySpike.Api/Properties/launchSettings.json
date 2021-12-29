@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IdentitySpike.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "identity",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:6001",
+      "dotnetRunMessages": true
+    }
+  }
+}
