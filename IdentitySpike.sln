@@ -1,19 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentitySpike.IdentityApi", "IdentitySpike.IdentityApi\IdentitySpike.IdentityApi.csproj", "{53CC06DA-D7EE-4B39-B626-FDACF0CB73B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentitySpike.IdentityApi", "IdentitySpike.IdentityApi\IdentitySpike.IdentityApi.csproj", "{53CC06DA-D7EE-4B39-B626-FDACF0CB73B0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentitySpike.Api", "IdentitySpike.Api\IdentitySpike.Api.csproj", "{9A5BEE61-C45E-49C0-9074-ED7D02BC0C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentitySpike.Client", "IdentitySpike.Client\IdentitySpike.Client.csproj", "{8C8AE028-2839-4FE9-AF73-06D9A50DD004}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{53CC06DA-D7EE-4B39-B626-FDACF0CB73B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,15 @@ Global
 		{9A5BEE61-C45E-49C0-9074-ED7D02BC0C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A5BEE61-C45E-49C0-9074-ED7D02BC0C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A5BEE61-C45E-49C0-9074-ED7D02BC0C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8AE028-2839-4FE9-AF73-06D9A50DD004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8AE028-2839-4FE9-AF73-06D9A50DD004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8AE028-2839-4FE9-AF73-06D9A50DD004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8AE028-2839-4FE9-AF73-06D9A50DD004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E578F5E-3FD5-461A-A0D6-11E6DAB7E307}
 	EndGlobalSection
 EndGlobal
