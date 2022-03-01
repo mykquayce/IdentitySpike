@@ -6,9 +6,13 @@
       "launchBrowser": true,
       "launchUrl": "identity",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://api:6001",
+        "ASPNETCORE_HTTPS_PORT": "6001",
+        "ASPNETCORE_Kestrel__Certificates__Default__Path": "%USERPROFILE%\\.aspnet\\https\\api.crt",
+        "ASPNETCORE_Kestrel__Certificates__Default__KeyPath": "%USERPROFILE%\\.aspnet\\https\\api.key"
       },
-      "applicationUrl": "https://localhost:6001",
+      "applicationUrl": "https://api:6001",
       "dotnetRunMessages": true
     }
   }

@@ -6,9 +6,13 @@
       "launchBrowser": true,
       "launchUrl": ".well-known/openid-configuration",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://identityapi:5001",
+        "ASPNETCORE_HTTPS_PORT": "5001",
+        "ASPNETCORE_Kestrel__Certificates__Default__Path": "%USERPROFILE%\\.aspnet\\https\\identityapi.crt",
+        "ASPNETCORE_Kestrel__Certificates__Default__KeyPath": "%USERPROFILE%\\.aspnet\\https\\identityapi.key"
       },
-      "applicationUrl": "https://localhost:5001",
+      "applicationUrl": "https://identityapi:5001",
       "dotnetRunMessages": true
     }
   }

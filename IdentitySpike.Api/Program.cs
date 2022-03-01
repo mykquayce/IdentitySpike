@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
     {
-		options.Authority = "https://localhost:5001";
+		options.Authority = "https://identityapi:5001";
 
         options.TokenValidationParameters = new TokenValidationParameters
         {
